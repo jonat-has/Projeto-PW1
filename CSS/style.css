@@ -1,0 +1,282 @@
+:root {
+    --corPesquisa: #0a1b2d;
+    --corpreto: #00001A;
+    --corHeader: #000033;
+    --txt-cor: white;
+    --corazul: #0000FF;
+    --txt-estilo: "Space Mono";
+    
+    
+}
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    height: 298vh;
+    width: 100%;
+    background-color: var(--corpreto);
+    
+    
+}
+/*Base do site*/
+
+
+.container-header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 8vh;
+    background-color: var(--corHeader);
+    font-family: var(--txt-estilo);
+    font-weight: bold;
+    text-transform: uppercase;
+    
+    
+}
+.container-header #logo img { 
+    width: 80px;
+    height: 65px;
+    
+    padding-top: 5px;
+}
+
+.container-header #logo{
+    display: flex;
+    width: 7%;
+    
+    justify-content: center;
+    padding-left: 10px;
+    
+}
+.container-header #opcao {
+    display: flex;
+    padding-left: 40px;
+    width: 64%;
+    flex-direction: row;
+    
+    
+    
+}
+.container-header #opcao a {
+    display: flex;
+    color: var(--txt-cor);
+    text-decoration: none;
+    font-size: 15px;
+    height: 100%;
+    width: 100%;
+    
+}
+
+.container-header #opcao a:hover {
+    background-color: var(--txt-cor);
+    color: var(--corHeader);
+}
+
+.container-header #busca-login {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    width: 26%;
+
+}
+.container-header #busca {
+    display: flex; 
+    align-items: center; 
+    background: var(--corPesquisa);
+    width: 200px;
+    height: 30px;
+    border-radius: 40px;
+    margin-left: 20px;
+   
+}
+.container-header #busca input {
+    border-radius: none;
+    background: none;
+    border: 0;
+    padding: 0;
+    color: var(--txt-cor);
+    font-size: 13px;
+    line-height: 25px;
+    width: 173px;
+    height: 28px;
+    text-indent: 6px;
+    font-family: var(--txt-estilo);
+}
+.container-header #busca a {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    
+}
+.container-header #login a {
+    display: flex;
+    width: 35px;
+    height: 35px;
+    margin-right: 15px;
+    padding-left: 50px;
+}
+/*Estilo do Header*/
+
+.container-top {
+    display: flex;
+    width: 100%;
+    height: 85vh;
+    padding-left: 35px;
+}
+
+.container-top #txt-top {
+    display: flex;
+    flex-direction: column;
+    width: 35vw;
+    height: 80vh;
+    border-radius: 5px;
+    font-family: var(--txt-estilo);
+}
+
+.container-top #txt-top #slogan {
+    font-size: 40px;
+    color: var(--txt-cor);
+    
+}
+
+.container-top #txt-top #descricao {
+    padding-top: 20px;
+    text-align: start;
+    padding-right: 10px;
+    color: var(--txt-cor);
+}
+
+.container-top #txt-top a {
+    margin-top: 60px;
+    width: 20em;
+    height: 50px;
+    border-radius: 8px;
+    text-decoration: none;
+    background-color: var(--corazul);
+    color: var(--txt-cor);
+    text-align: center;
+    
+
+}
+
+.container-top #txt-top a:hover {
+    background-color: var(--txt-cor);
+    color: var(--corazul);
+}
+.container-top #imagem-top {
+    width: 60em;
+    height: 100px;
+}
+/*Estilo do Top*/
+
+.container-mid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /*border: 1px solid white;*/
+    color: var(--txt-cor);
+    height: 90vh;
+    text-align: center;
+    font-family: var(--txt-estilo);
+}
+
+.container-mid #txt-mid {
+    width: 100%;
+    height: 15vh;
+    /*border: 1px solid white;*/
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+
+.container-mid #card {
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.container-mid #card a {
+    width: 200px;
+    height: 300px;
+    text-decoration: none;
+    color: var(--txt-cor);
+    border-radius: 10px;
+    
+}
+
+.container-mid #card:hover, #card a:hover {
+    width: 250px;
+    height: 350px;
+}
+/*Estilo do mid*/
+
+.container-bot {
+    border: 1px solid white;
+    height: 50vh;
+    color: var(--txt-cor);
+    font-family: var(--txt-estilo);
+    text-align: center;
+    font-size: 25px;
+}
+
+/*Estilo do bot*/
+
+.newsletter {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--corazul);
+    font-family: var(--txt-estilo);
+    height: 60vh;
+    border-radius: 25px;
+    margin-top: 20px;
+   
+    color: var(--txt-cor);
+}
+
+.newsletter #txt-newsletter {
+    width: 80vw;
+    height: 15vh;
+    text-align: center;
+}
+
+.newsletter fieldset {
+    height: 25vh;
+}
+/*Estilo da newsletter*/
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    height: 5vh;
+    justify-content: space-between;
+    color: var(--txt-cor);
+    font-family: var(--txt-estilo);
+    background-color: var(--corHeader);
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.footer #icones {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 10vw;
+    align-items: center;
+}
+
+.footer #icones img,#icones a {
+    width: 25px;
+    height: 25px;
+}
+
+#txt-footer {
+    display: flex;
+    align-items: center;
+}
+

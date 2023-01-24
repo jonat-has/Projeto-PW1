@@ -1,0 +1,7 @@
+Paletas de cores
+
+cores das imagens: #0000C2
+cor do fundo:#00001A
+cor do header: #000033
+cor do botão: #0000FF
+
