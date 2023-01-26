@@ -4,21 +4,27 @@
     --corHeader: #000033;
     --txt-cor: white;
     --corazul: #0000FF;
+    --corbranco: #fafafa;
     --txt-estilo: "Space Mono";
-    
-    
+
+
 }
-*,*::after,*::before{
+
+*,
+*::after,
+*::before {
     box-sizing: border-box;
 }
+
 body {
     margin: 0;
-    height: 298vh;
-    width: 100%;
+    height: 350vh;
+    width: 98.9vw;
     background-color: var(--corpreto);
-    
-    
+
+
 }
+
 /*Base do site*/
 
 
@@ -31,33 +37,29 @@ body {
     font-family: var(--txt-estilo);
     font-weight: bold;
     text-transform: uppercase;
-    
-    
 }
-.container-header #logo img { 
+
+.container-header #logo img {
     width: 80px;
     height: 65px;
-    
+
     padding-top: 5px;
 }
 
-.container-header #logo{
+.container-header #logo {
     display: flex;
     width: 7%;
-    
     justify-content: center;
     padding-left: 10px;
-    
 }
+
 .container-header #opcao {
     display: flex;
     padding-left: 40px;
     width: 64%;
     flex-direction: row;
-    
-    
-    
 }
+
 .container-header #opcao a {
     display: flex;
     color: var(--txt-cor);
@@ -65,7 +67,8 @@ body {
     font-size: 15px;
     height: 100%;
     width: 100%;
-    
+    align-items: center;
+    justify-content: center;
 }
 
 .container-header #opcao a:hover {
@@ -76,20 +79,22 @@ body {
 .container-header #busca-login {
     display: flex;
     justify-content: space-between;
-    align-items: center; 
+    align-items: center;
     width: 26%;
 
 }
+
 .container-header #busca {
-    display: flex; 
-    align-items: center; 
+    display: flex;
+    align-items: center;
     background: var(--corPesquisa);
     width: 200px;
     height: 30px;
     border-radius: 40px;
     margin-left: 20px;
-   
+
 }
+
 .container-header #busca input {
     border-radius: none;
     background: none;
@@ -103,15 +108,17 @@ body {
     text-indent: 6px;
     font-family: var(--txt-estilo);
 }
+
 .container-header #busca a {
     width: 20px;
     height: 20px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
-    align-items: center; 
-    
+    align-items: center;
+
 }
+
 .container-header #login a {
     display: flex;
     width: 35px;
@@ -119,6 +126,7 @@ body {
     margin-right: 15px;
     padding-left: 50px;
 }
+
 /*Estilo do Header*/
 
 .container-top {
@@ -138,19 +146,26 @@ body {
 }
 
 .container-top #txt-top #slogan {
-    font-size: 40px;
+    font-size: 60px;
     color: var(--txt-cor);
-    
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 70px;
+
 }
 
 .container-top #txt-top #descricao {
-    padding-top: 20px;
+    padding-top: 80px;
     text-align: start;
     padding-right: 10px;
     color: var(--txt-cor);
+    font-size: 20px;
 }
 
 .container-top #txt-top a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 60px;
     width: 20em;
     height: 50px;
@@ -158,38 +173,37 @@ body {
     text-decoration: none;
     background-color: var(--corazul);
     color: var(--txt-cor);
-    text-align: center;
-    
-
 }
 
 .container-top #txt-top a:hover {
     background-color: var(--txt-cor);
     color: var(--corazul);
 }
+
 .container-top #imagem-top {
     width: 60em;
     height: 100px;
 }
+
 /*Estilo do Top*/
 
 .container-mid {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    /*border: 1px solid white;*/
     color: var(--txt-cor);
-    height: 90vh;
+    height: 95vh;
     text-align: center;
     font-family: var(--txt-estilo);
+    padding-top: 25px;
 }
 
-.container-mid #txt-mid {
+#txt-mid {
     width: 100%;
     height: 15vh;
-    /*border: 1px solid white;*/
     text-transform: uppercase;
-    font-size: 25px;
+    font-size: 45px;
+    font-weight: bolder;
 }
 
 
@@ -197,7 +211,7 @@ body {
     width: 200px;
     height: 300px;
     display: flex;
-    flex-wrap: nowrap;
+    border: 1px solid white;
 }
 
 .container-mid #card a {
@@ -205,48 +219,140 @@ body {
     height: 300px;
     text-decoration: none;
     color: var(--txt-cor);
-    border-radius: 10px;
-    
 }
 
-.container-mid #card:hover, #card a:hover {
-    width: 250px;
-    height: 350px;
+#card img {
+    width: 100%;
+    height: 70%;
 }
+
+.container-mid #card:hover,
+#card a:hover {
+    width: 300px;
+    height: 375px;
+
+}
+
 /*Estilo do mid*/
 
 .container-bot {
     border: 1px solid white;
-    height: 50vh;
+    height: 70vh;
     color: var(--txt-cor);
     font-family: var(--txt-estilo);
     text-align: center;
     font-size: 25px;
 }
 
+#txt-bot {
+    width: 100%;
+    height: 25vh;
+    text-transform: uppercase;
+    font-size: 45px;
+    font-weight: bolder;
+}
+
+#clientes-bot {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 10px;
+    color: black;
+}
+
+#clientes-bot img {
+    width: 10vw;
+    height: 10vh;
+}
+
+#bill {
+    background-color: var(--corbranco);
+    display: flex;
+    border: 1px solid white;
+    flex-direction: column;
+    width: 15vw;
+    height: 40vh;
+    border-radius: 9px;
+    box-shadow: 7px 7px 13px 0px rgba(255, 0, 0, 0.22);
+    padding: 10px;
+
+
+
+}
+
+#jobs {
+    display: flex;
+    background-color: var(--corbranco);
+    border: 1px solid white;
+    flex-direction: column;
+    font-size: 10px;
+    width: 15vw;
+    height: 40vh;
+    border-radius: 9px;
+    padding: 10px;
+}
+
+#musk {
+    display: flex;
+    background-color: var(--corbranco);
+    border: 1px solid white;
+    flex-direction: column;
+    font-size: 10px;
+    width: 15vw;
+    height: 40vh;
+    border-radius: 9px;
+    padding: 10px;
+}
+
+#linux {
+    display: flex;
+    background-color: var(--corbranco);
+    border: 1px solid white;
+    flex-direction: column;
+    font-size: 10px;
+    width: 15vw;
+    height: 40vh;
+    border-radius: 9px;
+    padding: 10px;
+}
+
 /*Estilo do bot*/
 
-.newsletter {
+.container-newsletter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#newsletter {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     background-color: var(--corazul);
     font-family: var(--txt-estilo);
-    height: 60vh;
+    height: 15vh;
     border-radius: 25px;
-    margin-top: 20px;
-   
+    margin: 20px 20px;
     color: var(--txt-cor);
+    width: 50vw;
+    justify-content: space-evenly;
+    align-items: center;
+
 }
 
 .newsletter #txt-newsletter {
-    width: 80vw;
-    height: 15vh;
+    height: 10vh;
     text-align: center;
+    font-size: 20px;
+
 }
 
-.newsletter fieldset {
-    height: 25vh;
+#informacao {
+    display: flex;
+    justify-content: center;
+    height: 25px;
 }
+
 /*Estilo da newsletter*/
 
 .footer {
@@ -270,7 +376,8 @@ body {
     align-items: center;
 }
 
-.footer #icones img,#icones a {
+.footer #icones img,
+#icones a {
     width: 25px;
     height: 25px;
 }
@@ -279,4 +386,3 @@ body {
     display: flex;
     align-items: center;
 }
-
